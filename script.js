@@ -7,24 +7,23 @@ class Person {
 	get name(){
 		return this.name
 	}
-	set age(age) {
-		return this.age
+	set age(new age) {
+		return this.age = new age;
 	}
+	 get age() {
+        return this.age;
+    }
 }
 
 class Student extends Person {
-	constructor (){
-		super(name,age)
-	}
+	
 	study(){
 		console.log( 'this.name is studying')
 	}
 }
 
 class Teacher extends Person {
-	constructor (){
-		super(name,age)
-	}
+	
 	
 	teach(){
 		console.log( 'this.name is teaching')
